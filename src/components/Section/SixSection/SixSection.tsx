@@ -4,6 +4,7 @@ import Sec6Pic2 from '../../../assets/img/Sec6Pic2.svg'
 import '../../../assets/styles/SixSection.css'
 function SixSection(){
     return(
+
          <section className="section6">
             <div className="section6Foto">
                 <div className="section6Foto1">
@@ -29,3 +30,4 @@ function SixSection(){
 }
 
 export default SixSection;
+

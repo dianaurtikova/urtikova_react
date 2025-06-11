@@ -13,7 +13,7 @@ function FirstSection(){
                 <b className="textButton2">Compare Portals</b>
             </div>
             <div className="textSection1_1">
-                <img src={Sec1Pic1} alt="фон1.2" className="fon1.2"/>
+                <img src={Sec1Pic1} alt="фон1.2" className="fon1_2"/>
                 <img src={Sec1Pic2} alt="фон1.3" className="fon1_3"/>
                 <div className="textSection1_2">
                     <p className="text1Fon1_2"><b>Buy any 2 and save $50*</b></p>

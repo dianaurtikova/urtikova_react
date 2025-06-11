@@ -1,3 +1,6 @@
+.fon1{
+    width: 100%
+}
 .textSection1{
     margin-left:88px;
     position:relative;
@@ -6,7 +9,7 @@
 .text2Fon1{
     width: 327px;
     height: 24px;
-    top: 198.88px;
+    top:501.88px;
     font-family: Roboto;
     font-weight: 700px;
     font-size: 18px;
@@ -46,15 +49,21 @@ background-color: white;
     color: #1B365D; 
 }
 .textSection1_2{
-top:7px;
+top:16px;
 position:absolute;
 margin-left:188px;
 }
 .fon1_3{
-left: 50px;
+left: 0px;
 position:absolute;
-margin-top:16px;
-margin-left:39px;
+margin-top:10px;
+/* margin-left:39px; */
+}
+.fon1_2{
+margin-left: 88px;
+position: relative;
+z-index:2;
+top:27px;
 }
 .text1Fon1_2{
 font-family: Roboto;
