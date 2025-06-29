@@ -18,7 +18,7 @@ function Form({ active, setActive }: propsForm) {
     }
     return (
 
-        <div className={active ? "backdrop activ" : "backdrop"} onClick={() => setActive(false)}>
+        <div className={active ? "backdrop activ" : "backdrop"} onClick={clickClose}>
             <form className="form_click" onClick={e => e.stopPropagation()}>
                 <h1 className="form_name">Registration form</h1>
                 <div className="field-area">

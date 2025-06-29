@@ -2,6 +2,7 @@ import { useState } from 'react'
 import logoHeader from '../../assets/img/logotipHeader.svg'
 import Form from '../Form/Form'
 import '../../assets/styles/Header.css'
+
 function Header() {
     const [open, setOpen] = useState(false);
     const clickOpen = () => {
@@ -24,7 +25,7 @@ function Header() {
                     <button className="but" onClick={clickOpen}>Log Into</button>
                 </div>
             </header>
-            {open && <Form active={open} setActive={setOpen} />}
+             <Form active={open} setActive={setOpen} />
         </>
     );
 }

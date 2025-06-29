@@ -47,6 +47,7 @@ border-radius: 4px;
 border-style: solid;
 border-color: #A7BBC9;
 background-color: white;
+    z-index: 55;
 }
 .butt{
 text-decoration: none;
