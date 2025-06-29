@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../../../assets/styles/Form.css'
+import '../../assets/styles/Form.css'
 interface propsForm {
     active: boolean;
     setActive: (value: boolean) => void;

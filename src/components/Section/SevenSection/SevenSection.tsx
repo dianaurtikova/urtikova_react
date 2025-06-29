@@ -1,9 +1,7 @@
-import Sec1Pic1 from '../../../assets/img/Sec1Pic1.svg';
 import Sec7Card1 from '../../../assets/img/Sec7Card1.svg';
 import Sec7Card2 from '../../../assets/img/Sec7Card2.svg';
 import Sec7Card3 from '../../../assets/img/Sec7Card3.svg';
 import Sec7Card4 from '../../../assets/img/Sec7Card4.svg';
-import Sec7fon from '../../../assets/img/Sec7fon.svg';
 import '../../../assets/styles/SevenSection.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -13,20 +11,12 @@ function SevenSection() {
         <section className="section7">
             <div className="Sec7fon1">
                 <div className="Sec7fon2">
-                    <div className="section7Text">
-                        <p className="section7Text1_1"><b>Find the Portal that’s <br />right for you</b></p>
-                        <img src={Sec1Pic1} className="fon7" alt="Decoration" />
-                        <div className="section7Text2">
-                            <p className="section7Text2_1">Buy any 2 and save $50*</p>
-                            <p className="section7Text2_1">Ship to multiple addresses at no extra cost.</p>
-                        </div>
-                    </div>
-
                     <div className="card-container2">
                         <Swiper
                             modules={[Navigation]}
                             loop={true}
                             slidesPerView={4}
+                            spaceBetween={20}
                             slidesPerGroup={1}
                             navigation={{
                                 nextEl: '.swiper-button-next',
@@ -129,7 +119,6 @@ function SevenSection() {
                     </div>
                     <button className="CPbut">Compare Products</button>
                 </div>
-                <img src={Sec7fon} className="Sec7fon" alt="Background" />
             </div>
         </section>
     );

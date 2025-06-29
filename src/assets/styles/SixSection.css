@@ -1,15 +1,60 @@
+.section7Text {
+    position: relative;
+    z-index: 2;
+}
+
+.section6 {
+    position: relative;
+    width: 100%;
+}
+
+.section7Text1_1 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: 0%;
+    color: #1B365D;
+    margin-left: 88px;
+    margin-bottom: 27px;
+}
+
+.section7Text2 {
+    position: absolute;
+    margin-left: 188px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #1B365D;
+    margin-top: -67px;
+}
+
+.fon7 {
+    margin-left: 88px;
+}
+
+.section7Text2_1 {
+    margin-bottom: -14px;
+}
+
 .section6Foto {
     display: flex;
     margin-left: 88px;
     margin-right: 88px;
     margin-top: 100px;
-    position: absolute;
     height: 622px;
+    position: relative;
+    z-index: 2;
 }
 
 .blueFonS4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    margin-top: 412px;
+    z-index: 1;
 }
 
 .section6Text1 {
@@ -49,7 +94,6 @@
     line-height: 34px;
     letter-spacing: 0%;
     color: #1B365D;
-    /* margin-top: 9px; */
 }
 
 .section6Text1_2 {
