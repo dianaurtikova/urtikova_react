@@ -9,6 +9,7 @@ import FourSecond from '../src/components/Section/FourSecond/FourSecond'
 import FiveSecond from '../src/components/Section/FiveSection/FiveSection'
 import SixSection from '../src/components/Section/SixSection/SixSection'
 import SevenSection from '../src/components/Section/SevenSection/SevenSection'
+import CardList from '../src/components/CardList/CardList'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +23,9 @@ function App() {
       {isLoading ? <Preloader /> :
         <Layout>
           <FirstSection />
-          <SecondSection />
+          <SecondSection>
+            <CardList limit={4} />
+          </SecondSection>
           <ThirdSection />
           <FourSecond />
           <FiveSecond />

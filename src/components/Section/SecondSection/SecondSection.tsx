@@ -1,15 +1,19 @@
 import Sec2Fon1 from '../../../assets/img/Sec2Fon1.svg'
 import Sec2Fon2 from '../../../assets/img/Sec2Fon2.svg'
-import Sec2Card1 from '../../../assets/img/Sec2Card1.svg'
-import Sec2Card2 from '../../../assets/img/Sec2Card2.svg'
-import Sec2Card3 from '../../../assets/img/Sec2Card3.svg'
-import Sec2Card4 from '../../../assets/img/Sec2Card4.svg'
+// import Sec2Card1 from '../../../assets/img/Sec2Card1.svg'
+// import Sec2Card2 from '../../../assets/img/Sec2Card2.svg'
+// import Sec2Card3 from '../../../assets/img/Sec2Card3.svg'
+// import Sec2Card4 from '../../../assets/img/Sec2Card4.svg'
 import '../../../assets/styles/SecondSection.css'
+interface PropsCards {
+    children: React.ReactNode;
+}
 
-function SecondSection(){
+function SecondSection({ children }: PropsCards){
     return(
         <section className="section2">
-            <div className="card-container1" id="information-cards">
+            {children}
+            {/* <div className="card-container1" id="information-cards">
                 <div className="card">
                  <img src={Sec2Card1} className="card1"/>
                  <div className="cardText">
@@ -42,7 +46,7 @@ function SecondSection(){
                     <p>Learn More</p>
                  </div>
                 </div> 
-            </div>
+            </div>*/}
             <p className="textSection2"><b>Smart Camera keeps every conversation front and center</b></p>
             <div className="bluefon2">
                 <img src={Sec2Fon1} className="fon2"/>
@@ -59,7 +63,7 @@ function SecondSection(){
                     <p className="stolbec2_2">As more people enter a room, Smart Camera <br/>automatically widens to keep everyone in view, <br/> so you don’t miss a moment.</p>
                     <a href="#">Learn More</a>
                 </div>
-            </div>
+            </div> 
         </section>
     );
 }
