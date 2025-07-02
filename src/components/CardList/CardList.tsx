@@ -25,7 +25,7 @@ function CardList({ limit }: CardsProps) {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}`)
+                const response = await fetch(`https://jsonplaceholderr.typicode.com/posts?_limit=${limit}`)
                 if (!response.ok) {
                     throw new Error("Ошибка загрузки!");
                 }
@@ -46,13 +46,19 @@ function CardList({ limit }: CardsProps) {
     if (error) {
         return <p>Error:{error}</p>
     }
+    if (cards.length === 0 && !loading) {
+    return <p>No cards available</p>;
+}
+if (cards.length === 0) {
+    return <p>Нет данных для отображения.</p>;
+  }
     return (
         <div className="card-container1">
             {cards.map((card, index) => (
                 <Card
                     key={card.id}
                     card_foto={cardImages[index % cardImages.length]}
-                    card_name={card.title}
+                    card_name={`Comment ${index + 1}`}
                     card_description={card.body}
                     card_link="Learn More"
                 />
